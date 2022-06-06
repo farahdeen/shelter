@@ -85,13 +85,13 @@ public void click_donate_once_method(){
         title.selectByVisibleText("Mr");
     }
    //testing radio button
-    public void stay_touch_choice_method(){
+    public void stay_touch_choice_method() {
         driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[2]/fieldset/div/input[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[3]/fieldset/div/input[2]")).click();
         driver.findElement(By.xpath("/html/body/div[2]/div[5]/form/div[2]/div/div[2]/div/fieldset/div[2]/div/div[4]/fieldset/div/input[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[5]/fieldset/div/input[2]")).click();
-
-
-
     }
+        public void stay_touch_choice_methodss(){}
+
+
 }
