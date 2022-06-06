@@ -92,6 +92,7 @@ public void click_donate_once_method(){
         driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[5]/fieldset/div/input[2]")).click();
     }
         public void stay_touch_choice_methodss(){}
-
+}
+public void stay_touch_choice_methodss2(){}
 
 }
