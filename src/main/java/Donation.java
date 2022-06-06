@@ -30,7 +30,6 @@ public class Donation extends Basement {
     private WebElement choose_title_element;
 
 
-
     public void shelter_home_page() {
         driver.get("https://england.shelter.org.uk/");
         driver.findElement(By.xpath("//*[@id=\"ccc-notify-reject\"]")).click();
@@ -50,49 +49,54 @@ public class Donation extends Basement {
         System.out.println(url.equals(check));
         System.out.println(driver.getCurrentUrl());
     }
-public void click_donate_once_method(){
-    WebDriverWait wait = new WebDriverWait(driver,30);
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body[1]/div[2]/div[1]/main[1]/section[1]/div[1]/div[2]/div[1]/form[1]/div[1]/button[1]")));
 
-    donate_once_element.click();
-}
+    public void click_donate_once_method() {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body[1]/div[2]/div[1]/main[1]/section[1]/div[1]/div[2]/div[1]/form[1]/div[1]/button[1]")));
 
-    public void click_amount_method(){
+        donate_once_element.click();
+    }
 
-        WebDriverWait wait = new WebDriverWait(driver,30);
+    public void click_amount_method() {
+
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/div[@id='___gatsby']/div[@id='gatsby-focus-wrapper']/main[@id='main']/section[1]/div[1]/div[2]/div[1]/form[1]/div[2]/button[1]")));
         click_10pound_amount.click();
     }
-    public void donate_button_method_in_doantion_page(){
+
+    public void donate_button_method_in_doantion_page() {
         click_donate_button_element_in_donationpage.click();
     }
-    public void verify_customer_detail_page_method(){
+
+    public void verify_customer_detail_page_method() {
         WebElement strValue = driver.findElement(By.xpath("//h2[contains(text(),'Your details')]"));
         String strExpected = "Your details";
         String strActual = strValue.getText();
         System.out.println(strActual);
-        if (strExpected.equals(strActual))
-        { System.out.println("Strings are equal"); }
-        else { System.out.println("Strings are NOT equal"); }
+        if (strExpected.equals(strActual)) {
+            System.out.println("Strings are equal");
+        } else {
+            System.out.println("Strings are NOT equal");
+        }
 
     }
-    public void enter_email_address_method(){
+
+    public void enter_email_address_method() {
         enter_email_textbox_element.sendKeys("deensfr@hotamill.com");
     }
-    public void choose_title_method(){
-     //   choose_title_element.click();
+
+    public void choose_title_method() {
+        //   choose_title_element.click();
         Select title = new Select(choose_title_element);
         title.selectByVisibleText("Mr");
     }
-   //testing radio button
+
+    //testing radio button
     public void stay_touch_choice_method() {
         driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[2]/fieldset/div/input[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[3]/fieldset/div/input[2]")).click();
         driver.findElement(By.xpath("/html/body/div[2]/div[5]/form/div[2]/div/div[2]/div/fieldset/div[2]/div/div[4]/fieldset/div/input[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[5]/fieldset/div/input[2]")).click();
     }
-        public void stay_touch_choice_methodss(){}
 }
-public void stay_touch_choice_methodss2(){}
 
-}
