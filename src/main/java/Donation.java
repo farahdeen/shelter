@@ -98,10 +98,7 @@ public class Donation extends Basement {
         driver.findElement(By.xpath("/html/body/div[2]/div[5]/form/div[2]/div/div[2]/div/fieldset/div[2]/div/div[4]/fieldset/div/input[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[5]/fieldset/div/input[2]")).click();
     }
-    public void method4_empty_field (){
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-       
-    }
-    //delte the code below , copy and pasted same code from above for learning git
+
+
 }
 
