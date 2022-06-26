@@ -99,6 +99,9 @@ public class Donation extends Basement {
         driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[5]/fieldset/div/input[2]")).click();
     }
 
-
-}
+    //testing radio button
+    public void stay_touch_choicehgfjf_method() {
+        driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[2]/fieldset/div/input[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"fieldset-step2\"]/div[2]/div/div[3]/fieldset/div/input[2]")).click();
+}}
 
