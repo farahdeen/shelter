@@ -100,11 +100,7 @@ public class Donation extends Basement {
     }
     public void method4_empty_field (){
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        username_input_element.clear();
-        password_input_element.clear();
-        username_input_element.sendKeys("");
-        password_input_element.sendKeys("");
-        enter_login_element.click();
+       
     }
     //delte the code below , copy and pasted same code from above for learning git
 }
